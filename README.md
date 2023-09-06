@@ -53,3 +53,5 @@ npm run dev
 [![My Skills](https://skillicons.dev/icons?i=html,css,sass,vscode,vite)](https://skillicons.dev)
 
 ### What I learned
+
+1. Master flexbox and positioning elements. Hero section with image that splits on two required some flexbox magic as well as hiding right part on smaller screens.

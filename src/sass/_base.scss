@@ -175,6 +175,10 @@ $font-sizes: (
 
 .flex-flow {
 	display: flex;
+
+	&.jcc {
+		justify-content: center;
+	}
 }
 
 .grid-flow {

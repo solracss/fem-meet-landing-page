@@ -26,6 +26,7 @@ button.btn {
 	}
 
 	&-green {
+		padding-inline: 2.5em;
 		background-color: $clr-primary-400;
 		color: $clr-neutral-100;
 		transition: background-color 0.3s;

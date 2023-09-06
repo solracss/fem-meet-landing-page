@@ -20,3 +20,49 @@ body {
 		padding-block: 5rem;
 	}
 }
+
+.hero {
+	text-align: center;
+
+	&-img {
+		max-width: 110%;
+		position: relative;
+		left: -5%;
+	}
+
+	&-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 3rem;
+		max-width: remSize(457px);
+		margin-inline: auto;
+
+		@include media(small) {
+			margin-top: 4.5rem;
+		}
+
+		@include media(large) {
+			max-width: remSize(540px);
+		}
+	}
+
+	&-header {
+		max-width: 10ch;
+		font-size: $fs-40;
+		line-height: 1.1;
+		font-weight: $fw-bold;
+
+		@include media(small) {
+			font-size: $fs-48;
+		}
+	}
+
+	&-desc {
+		margin-top: 1.5rem;
+		padding-inline: 1.5rem;
+		color: $clr-primary-100;
+		line-height: 1.625;
+	}
+}

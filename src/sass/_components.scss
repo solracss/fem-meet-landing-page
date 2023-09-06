@@ -1,0 +1,75 @@
+@use "./base" as *;
+
+a.btn,
+button.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+	&:focus {
+		outline-style: solid;
+		outline-color: transparent;
+	}
+}
+
+.btn {
+	gap: 0.5rem;
+	padding: 1em 1.875em;
+	font-size: $fs-16;
+	font-weight: $fw-bold;
+	line-height: 1.625rem;
+	border-radius: 1.8125rem;
+
+	&:focus {
+		box-shadow: 0 0 0 4px scale-color($clr-primary-700, $lightness: -10%);
+	}
+
+	&-green {
+		background-color: $clr-primary-400;
+		color: $clr-neutral-100;
+		transition: background-color 0.3s;
+
+		&:hover,
+		&:active {
+			background-color: $clr-primary-300;
+		}
+	}
+
+	&-violet {
+		background-color: $clr-secondary-400;
+		color: $clr-neutral-100;
+		transition: background-color 0.3s;
+
+		&:hover,
+		&:active {
+			background-color: $clr-secondary-300;
+		}
+	}
+
+	&-block {
+		width: 100%;
+	}
+}
+
+.circle-counter {
+	$radius: 56px;
+	$border: 1px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-inline: auto;
+	border-radius: 50%;
+	border: $border solid $clr-primary-100;
+	aspect-ratio: 1/1;
+	height: $radius;
+	color: $clr-primary-100;
+
+	@include pseudo {
+		border-left: 1px solid $clr-primary-100;
+		width: 0.0625rem;
+		height: 5.25rem;
+		bottom: calc($radius - $border);
+	}
+}

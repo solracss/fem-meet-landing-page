@@ -38,6 +38,7 @@ button.btn {
 	}
 
 	&-violet {
+		padding-inline: 1.8125em;
 		background-color: $clr-secondary-400;
 		color: $clr-neutral-100;
 		transition: background-color 0.3s;

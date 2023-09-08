@@ -127,6 +127,12 @@ body {
 .description {
 	margin-top: 3.75rem;
 	text-align: center;
+	max-width: remSize(640px);
+
+	@include media(large) {
+		margin-top: 4.5rem;
+		max-width: remSize(500px);
+	}
 
 	&-eyebrow {
 		font-weight: $fw-bold;
@@ -141,6 +147,10 @@ body {
 		font-weight: $fw-bold;
 		font-size: $fs-32;
 		line-height: 1.125;
+
+		@include media(medium) {
+			margin-top: 1rem;
+		}
 	}
 
 	&-para {

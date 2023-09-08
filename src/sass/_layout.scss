@@ -23,10 +23,12 @@ body {
 
 .hero {
 	text-align: center;
+	margin-bottom: calc(remSize(80px) + 5.25rem);
 
 	@include media(large) {
 		display: flex;
 		align-items: center;
+		margin-bottom: calc(remSize(117px) + 5.25rem);
 	}
 
 	&-img {
@@ -91,6 +93,33 @@ body {
 
 		@include media(medium) {
 			flex-direction: row;
+		}
+	}
+}
+
+.gallery {
+	padding-inline: 1.5rem;
+	margin-top: 4rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: center;
+
+	@include media(large) {
+		gap: 2rem;
+	}
+
+	&-img {
+		width: calc(50% - 1rem);
+		max-width: 164px;
+		border-radius: 10px;
+
+		@include media(medium) {
+			width: calc(25% - 1rem);
+		}
+
+		@include media(large) {
+			max-width: 255px;
 		}
 	}
 }

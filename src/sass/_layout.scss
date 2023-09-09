@@ -180,6 +180,7 @@ body {
 
 	@include media(medium) {
 		margin-top: remSize(192px);
+		padding-inline: 6rem;
 		background: center top / cover no-repeat url("/img/tablet/image-footer.jpg");
 	}
 
@@ -187,6 +188,15 @@ body {
 		margin-top: remSize(184px);
 		background: center top / cover no-repeat
 			url("/img/desktop/image-footer.jpg");
+
+		&-wrapper {
+			max-width: remSize(1110px);
+			margin-inline: auto;
+			display: flex;
+			align-items: center;
+			text-align: left;
+			justify-content: space-around;
+		}
 	}
 
 	&-heading {
@@ -194,12 +204,20 @@ body {
 		font-size: $fs-32;
 		font-weight: $fw-bold;
 		line-height: 1.125;
+
+		@include media(large) {
+			max-width: remSize(350px);
+		}
 	}
 
 	&-para {
 		margin-bottom: 2rem;
 		font-size: $fs-18;
 		line-height: 1.44;
+
+		@include media(large) {
+			max-width: remSize(350px);
+		}
 	}
 
 	.circle-counter {

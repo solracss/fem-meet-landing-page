@@ -2,7 +2,7 @@
 
 This is a solution to the [Meet landing page](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR) from www.frontendmentor.io
 
-Live Site - [Open]()
+Live Site Preview - [Open](https://solracss.github.io/fem-meet-landing-page/)
 
 ## Table of contents
 

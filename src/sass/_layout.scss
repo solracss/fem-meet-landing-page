@@ -107,7 +107,9 @@ body {
 	justify-content: center;
 
 	@include media(large) {
-		gap: 2rem;
+		max-width: remSize(1110px);
+		gap: 1.5rem;
+		padding: 0;
 	}
 
 	&-img {

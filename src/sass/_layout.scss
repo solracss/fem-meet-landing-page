@@ -160,3 +160,50 @@ body {
 		line-height: 1.625;
 	}
 }
+
+.footer {
+	padding: 92px 24px 72px;
+	margin-top: remSize(176px);
+	text-align: center;
+	color: $clr-neutral-150;
+
+	background: url("/img/mobile/image-footer.jpg");
+	background-size: cover;
+
+	isolation: isolate;
+
+	@include pseudo {
+		inset: 0;
+		background-color: $clr-primary-400;
+		opacity: 0.9;
+		z-index: -1;
+	}
+
+	@include media(medium) {
+		margin-top: remSize(192px);
+	}
+
+	@include media(large) {
+		margin-top: remSize(184px);
+	}
+
+	&-heading {
+		margin-bottom: 1.5rem;
+		font-size: $fs-32;
+		font-weight: $fw-bold;
+		line-height: 1.125;
+	}
+
+	&-para {
+		margin-bottom: 2rem;
+		font-size: $fs-18;
+		line-height: 1.44;
+	}
+
+	.circle-counter {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}

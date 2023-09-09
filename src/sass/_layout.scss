@@ -30,10 +30,11 @@ body {
 		display: flex;
 		align-items: center;
 		margin-bottom: calc(remSize(117px) + 5.25rem);
+		overflow: visible;
 	}
 
 	&-img {
-		max-width: 110%;
+		max-width: 120%;
 
 		@include media(large) {
 			transform: translateY(-16%);

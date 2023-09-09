@@ -162,13 +162,12 @@ body {
 }
 
 .footer {
-	padding: 92px 24px 72px;
+	padding: remSize(92px) 1.5rem remSize(72px);
 	margin-top: remSize(176px);
 	text-align: center;
 	color: $clr-neutral-150;
 
-	background: url("/img/mobile/image-footer.jpg");
-	background-size: cover;
+	background: center top / cover no-repeat url("/img/mobile/image-footer.jpg");
 
 	isolation: isolate;
 
@@ -181,10 +180,13 @@ body {
 
 	@include media(medium) {
 		margin-top: remSize(192px);
+		background: center top / cover no-repeat url("/img/tablet/image-footer.jpg");
 	}
 
 	@include media(large) {
 		margin-top: remSize(184px);
+		background: center top / cover no-repeat
+			url("/img/desktop/image-footer.jpg");
 	}
 
 	&-heading {

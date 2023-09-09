@@ -25,8 +25,15 @@ button.btn {
 		box-shadow: 0 0 0 4px scale-color($clr-primary-700, $lightness: -10%);
 	}
 
-	&-green {
+	&-sm {
+		padding-inline: 1.8125em;
+	}
+
+	&-lr {
 		padding-inline: 2.5em;
+	}
+
+	&-green {
 		background-color: $clr-primary-400;
 		color: $clr-neutral-100;
 		transition: background-color 0.3s;
@@ -38,7 +45,6 @@ button.btn {
 	}
 
 	&-violet {
-		padding-inline: 1.8125em;
 		background-color: $clr-secondary-400;
 		color: $clr-neutral-100;
 		transition: background-color 0.3s;

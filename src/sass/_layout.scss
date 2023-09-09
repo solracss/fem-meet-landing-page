@@ -1,4 +1,4 @@
-@use "./base" as *;
+@use './base' as *;
 
 body {
 	min-height: 100vh;
@@ -169,7 +169,8 @@ body {
 	text-align: center;
 	color: $clr-neutral-150;
 
-	background: center top / cover no-repeat url("/img/mobile/image-footer.jpg");
+	background: center top / cover no-repeat
+		url('/assets/mobile/image-footer.jpg');
 
 	isolation: isolate;
 
@@ -183,13 +184,14 @@ body {
 	@include media(medium) {
 		margin-top: remSize(192px);
 		padding-inline: 6rem;
-		background: center top / cover no-repeat url("/img/tablet/image-footer.jpg");
+		background: center top / cover no-repeat
+			url('/assets/tablet/image-footer.jpg');
 	}
 
 	@include media(large) {
 		margin-top: remSize(184px);
 		background: center top / cover no-repeat
-			url("/img/desktop/image-footer.jpg");
+			url('/assets/desktop/image-footer.jpg');
 
 		&-wrapper {
 			max-width: remSize(1110px);

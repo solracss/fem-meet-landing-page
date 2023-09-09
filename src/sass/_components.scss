@@ -64,12 +64,16 @@ button.btn {
 	margin-inline: auto;
 	border-radius: 50%;
 	border: $border solid $clr-primary-100;
+	@include setHslaColor(border-color, $clr-primary-100, 0.25);
 	aspect-ratio: 1/1;
 	height: $radius;
 	color: $clr-primary-100;
+	font-weight: $fw-bold;
+	background-color: $clr-neutral-100;
 
 	@include pseudo {
-		border-left: 1px solid $clr-primary-100;
+		border-left: 1px solid;
+		@include setHslaColor(border-color, $clr-primary-100, 0.25);
 		width: 0.0625rem;
 		height: 5.25rem;
 		bottom: calc($radius - $border);
